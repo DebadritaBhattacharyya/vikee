@@ -6,7 +6,9 @@ import { UserConfig } from 'vite'
 export default {
   plugins: [
     vike({
-      prerender: true
+      prerender: {
+        partial: true // LA_TEMP
+      }
     }),
     mdx(),
     react()
